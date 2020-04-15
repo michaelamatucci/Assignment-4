@@ -25,71 +25,109 @@ public class Assignment4 {
 		
 		Scanner userInput = new Scanner(System.in);
 		
-		System.out.println("Please choose which type of object you'd like to create.");
-		System.out.println("1) Person\n2) Employee\n3) Doctor\n4) Nurse\n5) Patient");
-		System.out.println("6) Medicine\n7) OTC Drug\n8) Controlled OTC Drug\n9) Prescription");
+		Person people[] = new Person[3];
 		
-		System.out.print("Choice: ");
-		int choice = Integer.parseInt(userInput.nextLine());
-		System.out.println("-------------------");
+		Medicine medicines[] = new Medicine[3];
 		
-		switch(choice) {
-		case 1: // Person
-			Person p = new Person();
-			getPersonInformation(p, userInput);
+		int i = 0;
+		
+		while(i < people.length)
+		{
+			
+			System.out.println("Please choose which type of person you'd like to create.");
+			System.out.println("1) Person\n2) Employee\n3) Doctor\n4) Nurse\n5) Patient");
+			
+			System.out.print("Choice: ");
+			int choice1 = Integer.parseInt(userInput.nextLine());
 			System.out.println("-------------------");
-			System.out.println(p);
-			break;
-		case 2: // Employee
-			Employee e = new Employee();
-			getEmployeeInformation(e, userInput);
+			
+			switch(choice1) {
+			case 1: // Person
+				Person p = new Person();
+				getPersonInformation(p, userInput);
+				people[i] = p;
+				System.out.println("-------------------");
+				System.out.println(p);
+				break;
+			case 2: // Employee
+				Employee e = new Employee();
+				getEmployeeInformation(e, userInput);
+				people[i] = e;
+				System.out.println("-------------------");
+				System.out.println(e);
+				break;
+			case 3: // Doctor
+				Doctor d = new Doctor();
+				getDoctorInformation(d, userInput);
+				people[i] = d;
+				System.out.println("-------------------");
+				System.out.println(d);
+				break;
+			case 4: // Nurse
+				Nurse n = new Nurse();
+				getNurseInformation(n, userInput);
+				people[i] = n;
+				System.out.println("-------------------");
+				System.out.println(n);
+				break;
+			case 5: // Patient
+				Patient pt = new Patient();
+				getPatientInformation(pt, userInput);
+				people[i] = pt;
+				System.out.println("-------------------");
+				System.out.println(pt);
+				break;
+			default:
+				System.out.println("The input is not valid.");
+			}
+		
+		}
+		
+		i = 0;
+		
+		while(i < medicines.length)
+		{
+		
+			System.out.println("Please choose which type of medicine you'd like to create.");
+			System.out.println("1) Medicine\n2) OTC Drug\n3) Controlled OTC Drug\n4) Prescription");
+			
+			System.out.print("Choice: ");
+			int choice2 = Integer.parseInt(userInput.nextLine());
 			System.out.println("-------------------");
-			System.out.println(e);
-			break;
-		case 3: // Doctor
-			Doctor d = new Doctor();
-			getDoctorInformation(d, userInput);
-			System.out.println("-------------------");
-			System.out.println(d);
-			break;
-		case 4: // Nurse
-			Nurse n = new Nurse();
-			getNurseInformation(n, userInput);
-			System.out.println("-------------------");
-			System.out.println(n);
-			break;
-		case 5: // Patient
-			Patient pt = new Patient();
-			getPatientInformation(pt, userInput);
-			System.out.println("-------------------");
-			System.out.println(pt);
-			break;
-		case 6: // Medicine
-			Medicine m = new Medicine();
-			getMedicineInformation(m, userInput);
-			System.out.println("-------------------");
-			System.out.println(m);
-			break;
-		case 7: // OTC Drug
-			OTCDrug otc = new OTCDrug();
-			getOTCDrugInformation(otc, userInput);
-			System.out.println("-------------------");
-			System.out.println(otc);
-			break;
-		case 8: // Controlled drug
-			Controlled cd = new Controlled();
-			getControlledInformation(cd, userInput);
-			System.out.println("-------------------");
-			System.out.println(cd);
-			break;
-		case 9: // Prescription
-			Prescription pd = new Prescription();
-			getPrescriptionInformation(pd, userInput);
-			System.out.println("-------------------");
-			System.out.println(pd);
-			break;
-		default:
-			System.out.println("The input is not valid.");
+			
+			switch(choice2) {
+			case 1: // Medicine
+				Medicine m = new Medicine();
+				getMedicineInformation(m, userInput);
+				medicines[i] = m;
+				System.out.println("-------------------");
+				System.out.println(m);
+				break;
+			case 2: // OTC Drug
+				OTCDrug otc = new OTCDrug();
+				getOTCDrugInformation(otc, userInput);
+				medicines[i] = otc;
+				System.out.println("-------------------");
+				System.out.println(otc);
+				break;
+			case 3: // Controlled drug
+				Controlled cd = new Controlled();
+				getControlledInformation(cd, userInput);
+				medicines[i] = cd;
+				System.out.println("-------------------");
+				System.out.println(cd);
+				break;
+			case 4: // Prescription
+				Prescription pd = new Prescription();
+				getPrescriptionInformation(pd, userInput);
+				medicines[i] = pd;
+				System.out.println("-------------------");
+				System.out.println(pd);
+				break;
+			default:
+				System.out.println("The input is not valid.");
+			}
+		
 		}
 		
 		userInput.close();

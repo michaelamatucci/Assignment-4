@@ -1,0 +1,392 @@
+[
+  {
+    "Specialty": "Abdominal Radiology Radiology-Diagnostic"
+  },
+  {
+    "Specialty": "Addiction Psychiatry Psychiatry"
+  },
+  {
+    "Specialty": "Adolescent Medicine Pediatrics"
+  },
+  {
+    "Specialty": "Adult Cardiothoracic Anesthesiology Anesthesiology"
+  },
+  {
+    "Specialty": "Adult Reconstructive Orthopaedics Orthopaedic Surgery"
+  },
+  {
+    "Specialty": "Advanced Heart Failure & Transplant Cardiology Internal Medicine"
+  },
+  {
+    "Specialty": "Allergy & Immunology"
+  },
+  {
+    "Specialty": "Anesthesiology"
+  },
+  {
+    "Specialty": "Biochemical Genetics Medical Genetics"
+  },
+  {
+    "Specialty": "Blood Banking - Transfusion Medicine Pathology-Anatomic & Clinical"
+  },
+  {
+    "Specialty": "Cardiothoracic Radiology Radiology-Diagnostic"
+  },
+  {
+    "Specialty": "Cardiovascular Disease Internal Medicine"
+  },
+  {
+    "Specialty": "Chemical Pathology Pathology-Anatomic & Clinical"
+  },
+  {
+    "Specialty": "Child & Adolescent Psychiatry Psychiatry"
+  },
+  {
+    "Specialty": "Child Neurology Neurology"
+  },
+  {
+    "Specialty": "Clinical & Laboratory Immunology Allergy & Immunology"
+  },
+  {
+    "Specialty": "Clinical Cardiac Electrophysiology Internal Medicine"
+  },
+  {
+    "Specialty": "Clinical Neurophysiology Neurology"
+  },
+  {
+    "Specialty": "Colon & Rectal Surgery"
+  },
+  {
+    "Specialty": "Congenital Cardiac Surgery Thoracic Surgery"
+  },
+  {
+    "Specialty": "Craniofacial Surgery Plastic Surgery"
+  },
+  {
+    "Specialty": "Critical Care Medicine Anesthesiology"
+  },
+  {
+    "Specialty": "Critical Care Medicine Internal Medicine"
+  },
+  {
+    "Specialty": "Cytopathology Pathology-Anatomic & Clinical"
+  },
+  {
+    "Specialty": "Dermatology"
+  },
+  {
+    "Specialty": "Dermatopathology Dermatology"
+  },
+  {
+    "Specialty": "Developmental-Behavioral Pediatrics Pediatrics"
+  },
+  {
+    "Specialty": "Emergency Medicine"
+  },
+  {
+    "Specialty": "Endocrinology"
+  },
+  {
+    "Specialty": "Endovascular Surgical Neuroradiology Neurological Surgery"
+  },
+  {
+    "Specialty": "Endovascular Surgical Neuroradiology Neurology"
+  },
+  {
+    "Specialty": "Endovascular Surgical Neuroradiology Radiology-Diagnostic"
+  },
+  {
+    "Specialty": "Family Medicine"
+  },
+  {
+    "Specialty": "Family Practice"
+  },
+  {
+    "Specialty": "Female Pelvic Medicine & Reconstructive Surgery Obstetrics & Gynecology"
+  },
+  {
+    "Specialty": "Foot & Ankle Orthopaedics Orthopaedic Surgery"
+  },
+  {
+    "Specialty": "Forensic Pathology Pathology-Anatomic & Clinical"
+  },
+  {
+    "Specialty": "Forensic Psychiatry Psychiatry"
+  },
+  {
+    "Specialty": "Gastroenterology Internal Medicine"
+  },
+  {
+    "Specialty": "Geriatric Medicine Family Medicine"
+  },
+  {
+    "Specialty": "Geriatric Medicine Internal Medicine"
+  },
+  {
+    "Specialty": "Geriatric Medicine Family Practice"
+  },
+  {
+    "Specialty": "Geriatric Psychiatry Psychiatry"
+  },
+  {
+    "Specialty": "Hand Surgery Orthopaedic Surgery"
+  },
+  {
+    "Specialty": "Hand Surgery Plastic Surgery"
+  },
+  {
+    "Specialty": "Hand Surgery Surgery-General"
+  },
+  {
+    "Specialty": "Hematology Internal Medicine"
+  },
+  {
+    "Specialty": "Hematology Pathology-Anatomic & Clinical"
+  },
+  {
+    "Specialty": "Hematology & Oncology Internal Medicine"
+  },
+  {
+    "Specialty": "Infectious Disease Internal Medicine"
+  },
+  {
+    "Specialty": "Internal Medicine"
+  },
+  {
+    "Specialty": "Internal Medicine-Pediatrics"
+  },
+  {
+    "Specialty": "Interventional Cardiology Internal Medicine"
+  },
+  {
+    "Specialty": "Medical Genetics"
+  },
+  {
+    "Specialty": "Medical Microbiology Pathology-Anatomic & Clinical"
+  },
+  {
+    "Specialty": "Medical Toxicology Emergency Medicine"
+  },
+  {
+    "Specialty": "Medical Toxicology Preventive Medicine"
+  },
+  {
+    "Specialty": "Molecular Genetic Pathology Medical Genetics"
+  },
+  {
+    "Specialty": "Muscoskeletal Radiology Radiology-Diagnostic"
+  },
+  {
+    "Specialty": "Musculoskeletal Oncology Orthopaedic Surgery"
+  },
+  {
+    "Specialty": "Neonatal-Perinatal Medicine Pediatrics"
+  },
+  {
+    "Specialty": "Nephrology Internal Medicine"
+  },
+  {
+    "Specialty": "Neurological Surgery"
+  },
+  {
+    "Specialty": "Neurology"
+  },
+  {
+    "Specialty": "Neuromuscular Medicine Neurology"
+  },
+  {
+    "Specialty": "Neuromuscular Medicine Physical Medicine & Rehabilitation"
+  },
+  {
+    "Specialty": "Neuropathology Pathology-Anatomic & Clinical"
+  },
+  {
+    "Specialty": "Neuroradiology Radiology-Diagnostic"
+  },
+  {
+    "Specialty": "Nuclear Medicine"
+  },
+  {
+    "Specialty": "Nuclear Radiology Radiology-Diagnostic"
+  },
+  {
+    "Specialty": "Obstetric Anesthesiology Anesthesiology"
+  },
+  {
+    "Specialty": "Obstetrics & Gynecology"
+  },
+  {
+    "Specialty": "Oncology Internal Medicine"
+  },
+  {
+    "Specialty": "Ophthalmic Plastic & Reconstructive Surgery Ophthalmology"
+  },
+  {
+    "Specialty": "Ophthalmology"
+  },
+  {
+    "Specialty": "Orthopaedic Sports Medicine Orthopaedic Surgery"
+  },
+  {
+    "Specialty": "Orthopaedic Surgery"
+  },
+  {
+    "Specialty": "Orthopaedic Surgery of the Spine Orthopaedic Surgery"
+  },
+  {
+    "Specialty": "Orthopaedic Trauma Orthopaedic Surgery"
+  },
+  {
+    "Specialty": "Otolaryngology"
+  },
+  {
+    "Specialty": "Otology - Neurotology Otolaryngology"
+  },
+  {
+    "Specialty": "Pain Medicine Anesthesiology"
+  },
+  {
+    "Specialty": "Pain Medicine Neurology"
+  },
+  {
+    "Specialty": "Pain Medicine Physical Medicine & Rehabilitation"
+  },
+  {
+    "Specialty": "Pathology-Anatomic & Clinical"
+  },
+  {
+    "Specialty": "Pediatric Anesthesiology Anesthesiology"
+  },
+  {
+    "Specialty": "Pediatric Cardiology Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Critical Care Medicine Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Emergency Medicine Emergency Medicine"
+  },
+  {
+    "Specialty": "Pediatric Emergency Medicine Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Endocrinology Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Gastroenterology Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Hematology-Oncology Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Infectious Diseases Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Nephrology Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Orthopaedics Orthopaedic Surgery"
+  },
+  {
+    "Specialty": "Pediatric Otolaryngology Otolaryngology"
+  },
+  {
+    "Specialty": "Pediatric Pathology Pathology-Anatomic & Clinical"
+  },
+  {
+    "Specialty": "Pediatric Pulmonology Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Radiology Radiology-Diagnostic"
+  },
+  {
+    "Specialty": "Pediatric Rheumatology Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Sports Medicine Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Surgery Surgery-General"
+  },
+  {
+    "Specialty": "Pediatric Transplant Hepatology Pediatrics"
+  },
+  {
+    "Specialty": "Pediatric Urology Urology"
+  },
+  {
+    "Specialty": "Pediatrics"
+  },
+  {
+    "Specialty": "Physical Medicine & Rehabilitation"
+  },
+  {
+    "Specialty": "Plastic Surgery"
+  },
+  {
+    "Specialty": "Preventive Medicine"
+  },
+  {
+    "Specialty": "Procedural Dermatology Dermatology"
+  },
+  {
+    "Specialty": "Psychiatry"
+  },
+  {
+    "Specialty": "Pulmonary Disease Internal Medicine"
+  },
+  {
+    "Specialty": "Pulmonary Disease & Critical Care Medicine Internal Medicine"
+  },
+  {
+    "Specialty": "Radiation Oncology"
+  },
+  {
+    "Specialty": "Radiology-Diagnostic"
+  },
+  {
+    "Specialty": "Rheumatology Internal Medicine"
+  },
+  {
+    "Specialty": "Sleep Medicine"
+  },
+  {
+    "Specialty": "Spinal Cord Injury Medicine Physical Medicine & Rehabilitation"
+  },
+  {
+    "Specialty": "Sports Medicine Emergency Medicine"
+  },
+  {
+    "Specialty": "Sports Medicine Family Medicine"
+  },
+  {
+    "Specialty": "Sports Medicine Internal Medicine"
+  },
+  {
+    "Specialty": "Sports Medicine Physical Medicine & Rehabilitation"
+  },
+  {
+    "Specialty": "Surgery-General"
+  },
+  {
+    "Specialty": "Surgical Critical Care Surgery-General"
+  },
+  {
+    "Specialty": "Thoracic Surgery"
+  },
+  {
+    "Specialty": "Thoracic Surgery-Integrated Thoracic Surgery"
+  },
+  {
+    "Specialty": "Transplant Hepatology Internal Medicine"
+  },
+  {
+    "Specialty": "Urology"
+  },
+  {
+    "Specialty": "Vascular & Interventional Radiology Radiology-Diagnostic"
+  },
+  {
+    "Specialty": "Vascular Surgery Surgery-General"
+  }
+]

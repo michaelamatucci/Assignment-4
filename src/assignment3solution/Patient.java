@@ -2,7 +2,7 @@ package assignment3solution;
 
 /*
  * Taken from assignment 2 solution
- * Modified 2020-03-30 by Michael Amatucci
+ * Modified 2020-04-16 by Michael Amatucci
  */
 
 public class Patient extends Person {
@@ -21,7 +21,7 @@ public class Patient extends Person {
 		return primaryPhysician;
 	}
 	
-	public boolean setPrimaryPhysician(String primaryPhysician) {
+	public boolean setPrimaryPhysician(String primaryPhysician, Person people[]) {
 		if ( primaryPhysician == null )
 			return false;
 		
@@ -35,6 +35,31 @@ public class Patient extends Person {
 		
 		if ( !primaryPhysician.matches("[A-Za-z\\'\\-\\ ]+"))
 			return false;
+		
+		//Checks if the array of People objects contains the physician with a matching ID
+		
+		if(people != null)
+		{
+			boolean contains = false;
+			
+			for(Person p : people)
+			{
+				if(p instanceof Doctor)
+				{
+					String empName = p.getFirstName();
+					empName += " " + p.getLastName();
+					
+					if(empName.equalsIgnoreCase(primaryPhysician))
+						contains = true;
+				}
+			}
+			
+			if(!contains)
+			{
+				this.primaryPhysician = "Physician not found";
+				return false;
+			}
+		}
 		
 		this.primaryPhysician = primaryPhysician;
 		return true;

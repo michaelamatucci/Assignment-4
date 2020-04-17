@@ -35,10 +35,15 @@ public class Assignment4 {
 		{
 			
 			System.out.println("Please choose which type of person you'd like to create.");
-			System.out.println("1) Person\n2) Employee\n3) Doctor\n4) Nurse\n5) Patient");
+			System.out.println("1) Person\n2) Employee\n3) Doctor\n4) Nurse\n5) Patient\n0) Done");
 			
 			System.out.print("Choice: ");
-			int choice1 = Integer.parseInt(userInput.nextLine());
+			String input = userInput.nextLine();
+			
+			int choice1 = -1;
+			if(input.isEmpty() == false)
+				choice1 = Integer.parseInt(input);
+			
 			System.out.println("-------------------");
 			
 			switch(choice1) {
@@ -72,14 +77,20 @@ public class Assignment4 {
 				break;
 			case 5: // Patient
 				Patient pt = new Patient();
-				getPatientInformation(pt, userInput);
+				getPatientInformation(pt, userInput, people);
 				people[i] = pt;
 				System.out.println("-------------------");
 				System.out.println(pt);
 				break;
+			case 0: //Done
+				i = 3;
+				break;
 			default:
 				System.out.println("The input is not valid.");
+				break;
 			}
+			
+			i++;
 		
 		}
 		
@@ -89,10 +100,15 @@ public class Assignment4 {
 		{
 		
 			System.out.println("Please choose which type of medicine you'd like to create.");
-			System.out.println("1) Medicine\n2) OTC Drug\n3) Controlled OTC Drug\n4) Prescription");
+			System.out.println("1) Medicine\n2) OTC Drug\n3) Controlled OTC Drug\n4) Prescription\n0) Done");
 			
 			System.out.print("Choice: ");
-			int choice2 = Integer.parseInt(userInput.nextLine());
+			String input = userInput.nextLine();
+			
+			int choice2 = -1;
+			if(input.isEmpty() == false)
+				choice2 = Integer.parseInt(input);
+				
 			System.out.println("-------------------");
 			
 			switch(choice2) {
@@ -124,9 +140,15 @@ public class Assignment4 {
 				System.out.println("-------------------");
 				System.out.println(pd);
 				break;
+			case 0: //Done
+				i = 3;
+				break;
 			default:
 				System.out.println("The input is not valid.");
+				break;
 			}
+			
+			i++;
 		
 		}
 		
@@ -205,11 +227,11 @@ public class Assignment4 {
 		m.setUnit(userInput.nextLine());
 	}
 	
-	public static void getPatientInformation(Patient p, Scanner userInput) {
+	public static void getPatientInformation(Patient p, Scanner userInput, Person people[]) {
 		getPersonInformation(p, userInput);
 		
 		System.out.print("Enter the name of the primary physician: ");
-		p.setPrimaryPhysician(userInput.nextLine());
+		p.setPrimaryPhysician(userInput.nextLine(), people);
 		
 		System.out.print("Enter any notes about the patient, max 100 characters: ");
 		p.setNotes(userInput.nextLine());

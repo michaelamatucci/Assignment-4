@@ -2,8 +2,8 @@ package assignment3solution;
 
 /*
  * Taken from assignment 2 solution
- * Modified 2020-04-04 by Michael Amatucci
- *Modified 04-18-2020 by Victoria McNally
+ * Modified 2020-04-20 by Michael Amatucci
+ * Modified 04-18-2020 by Victoria McNally
  */
 
 public class Prescription extends Medicine {
@@ -35,7 +35,18 @@ public class Prescription extends Medicine {
 		return true;
 	}
 	
-		//Checks if the array of Prescriptions contains the Patient with a matching ID
+	public String getPrescriberID() {
+		return prescriberID;
+	}
+	
+	public boolean setPrescriberID(String prescriberID, Person people[]) {
+		
+		if ( prescriberID == null )
+			return false;
+		
+		prescriberID = prescriberID.trim().replaceAll(" ", "");
+		
+		//checks the prescriber ID against the array of people to find a matching Doctor or prescriber Nurse
 		
 		if(people != null)
 		{
@@ -43,39 +54,29 @@ public class Prescription extends Medicine {
 			
 			for(Person p : people)
 			{
-				if(p instanceof Patient)
+				if(p instanceof Doctor)
 				{
-					String empName = p.getFirstName();
-					empName += " " + p.getLastName();
+					String empId = ((Doctor) p).getEmployeeID();
 					
-					if(empName.equalsIgnoreCase(primaryPatient))
+					if(empId.equalsIgnoreCase(prescriberID))
+						contains = true;
+				}
+				else if(p instanceof Nurse)
+				{
+					String empId = ((Nurse) p).getEmployeeID();
+					
+					if(empId.equalsIgnoreCase(prescriberID) && ((Nurse) p).canPrescribe())
 						contains = true;
 				}
 			}
 			
 			if(!contains)
 			{
-				this.primaryPatient = "Patient not found";
+				this.prescriberID = "Prescriber not found";
 				return false;
 			}
 		}
 		
-		this.primaryPatient = primaryPatient;
-		return true;
-	}
-	
-	public String getPrescriberID() {
-		return prescriberID;
-	}
-	
-	public boolean setPrescriberID(String prescriberID) {
-		if ( prescriberID == null )
-			return false;
-		
-		prescriberID = prescriberID.trim().replaceAll(" ", "");
-		
-		if ( !prescriberID.matches("\\d{10}") )
-			return false;
 		
 		this.prescriberID = prescriberID;
 		return true;

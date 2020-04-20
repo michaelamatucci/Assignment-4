@@ -135,7 +135,7 @@ public class Assignment4 {
 				break;
 			case 4: // Prescription
 				Prescription pd = new Prescription();
-				getPrescriptionInformation(pd, userInput);
+				getPrescriptionInformation(pd, userInput, people);
 				medicines[i] = pd;
 				System.out.println("-------------------");
 				System.out.println(pd);
@@ -155,14 +155,14 @@ public class Assignment4 {
 		userInput.close();
 	}
 	
-	public static void getPrescriptionInformation(Prescription p, Scanner userInput) {
+	public static void getPrescriptionInformation(Prescription p, Scanner userInput, Person people[]) {
 		getMedicineInformation(p, userInput);
 		
 		System.out.print("7-digit ID of the prescription: ");
 		p.setPrescriptionID(userInput.nextLine());
 		
 		System.out.print("10-digit ID of the prescriber: ");
-		p.setPrescriberID(userInput.nextLine());
+		p.setPrescriberID(userInput.nextLine(), people);
 	}
 	
 	public static void getControlledInformation(Controlled c, Scanner userInput) {
